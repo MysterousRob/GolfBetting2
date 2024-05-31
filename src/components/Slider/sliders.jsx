@@ -14,67 +14,65 @@ function MultiVariableSlider() {
     {title: 'Event Form', value: '0', 
         children:[
           {title: 'Event Average', value: '0'},
-          {title: 'Event-10', value: '0'},
-          {title: 'Event Wins', value: '0'},
-          {title: 'Last Year Tournament', value: '0'},
+          {title: 'Event-10', value: '1'},
+          {title: 'Event Wins', value: '2'},
+          {title: 'Last Year Tournament', value: '3'},
     ]},
 //current form
 // sliderValues[1].children[0].title 
 // sliderValues[1].children[1].title
-    {title: 'Current Form', value: '0',         
+    {title: 'Current Form', value: '1',         
       children:[
       {title: 'OWGR', value: '0'},
-      
-      {title: 'Last Tournament', value: '0'},
-     
-      {title: 'Last but 1 Tournament', value: '0'},
-      {title: 'Last but 3 Tournament', value: '0'},
-      {title: 'Last but 5 Tournament', value: '0'},
+      {title: 'Last Tournament', value: '1'},
+      {title: 'Last but 1 Tournament', value: '2'},
+      {title: 'Last but 3 Tournament', value: '3'},
+      {title: 'Last but 5 Tournament', value: '4'},
 ]},
 //soring stats
-    {title: 'Scoring Stats', value: '0',
+    {title: 'Scoring Stats', value: '2',
       children:[
       {title: 'Hole in One Average', value: '0'},
-      {title: 'Birdie Average', value: '0'},
-      {title: 'Eagle Average', value: '0'},
-      {title: 'Bogey Average', value: '0'},
-      {title: 'Par 3 Performance', value: '0'},
-      {title: 'Par 4 Performance', value: '0'},
-      {title: 'Par 5 Performance', value: '0'},
+      {title: 'Birdie Average', value: '1'},
+      {title: 'Eagle Average', value: '2'},
+      {title: 'Bogey Average', value: '3'},
+      {title: 'Par 3 Performance', value: '4'},
+      {title: 'Par 4 Performance', value: '5'},
+      {title: 'Par 5 Performance', value: '6'},
 ]},
 //Event Specific
 // sliderValues[3].children[0].title
-    {title: 'Event Specific', value: '0',
+    {title: 'Event Specific', value: '3',
     children:[
     {title: 'Par 70', value: '0'},
       
-    {title: 'Short Course', value: '0'},
-    {title: 'Bermuda Postive', value: '0'},
-    {title: 'Soft Ground', value: '0'},
-    {title: 'Fazio Design', value: '0'},
-    {title: 'Costal Course', value: '0'},
+    {title: 'Short Course', value: '1'},
+    {title: 'Bermuda Postive', value: '2'},
+    {title: 'Soft Ground', value: '3'},
+    {title: 'Fazio Design', value: '4'},
+    {title: 'Costal Course', value: '5'},
 ]},
 //Strokes Gained
-    {title: 'Strokes Gained', value: '0',
+    {title: 'Strokes Gained', value: '4',
     children:[
     {title: 'SG off the Tee', value: '0'},
-    {title: 'SG Approach', value: '0'},
-    {title: 'SG Tee to Green', value: '0'},
-    {title: 'SG arround the Green', value: '0'},
-    {title: 'SG Putting', value: '0'},
+    {title: 'SG Approach', value: '1'},
+    {title: 'SG Tee to Green', value: '2'},
+    {title: 'SG arround the Green', value: '3'},
+    {title: 'SG Putting', value: '4'},
 ]},
 //skill stats
-    {title: 'Skill Stats', value: '0',
+    {title: 'Skill Stats', value: '5',
     children:[
     {title: 'Driving Distance', value: '0'},
-    {title: 'Proximity to Hole', value: '0'},
-    {title: 'Going for Green', value: '0'},
-    {title: 'Driving Acuracy', value: '0'},
-    {title: 'GIR', value: '0'},
-    {title: 'Scrambling', value: '0'},
-    {title: 'Sand Saves', value: '0'},
-    {title: 'Putting Average', value: '0'},
-    {title: 'Puts per Round', value: '0'},
+    {title: 'Proximity to Hole', value: '1'},
+    {title: 'Going for Green', value: '2'},
+    {title: 'Driving Acuracy', value: '3'},
+    {title: 'GIR', value: '4'},
+    {title: 'Scrambling', value: '5'},
+    {title: 'Sand Saves', value: '6'},
+    {title: 'Putting Average', value: '7'},
+    {title: 'Puts per Round', value: '8'},
 ]},
   ]);
 
@@ -187,7 +185,7 @@ function MultiVariableSlider() {
           </ul>
         </div>
        {/* current form */}
-       <div tabIndex={0} className="dropdown">
+       <div tabIndex={1} className="dropdown">
           <div role="button" className="btn">
             <p className="color">
               Current Form
@@ -199,13 +197,13 @@ function MultiVariableSlider() {
             setSliderValues={setSliderValues}
             value={sliderValues[1].value} />
             
-            {dropdownOpen[0] ? (
-              <FaArrowCircleUp onClick={() => toggleDropdown(0)} />
+            {dropdownOpen[1] ? (
+              <FaArrowCircleUp onClick={() => toggleDropdown(1)} />
             ) : (
-              <FaArrowCircleDown onClick={() => toggleDropdown(0)} />
+              <FaArrowCircleDown onClick={() => toggleDropdown(1)} />
             )}
           </div>
-          <ul className={`dropdown-content ${dropdownOpen[0] ? "show" : ""}`}>
+          <ul className={`dropdown-content ${dropdownOpen[1] ? "show" : ""}`}>
             <li className="slider-list">
               <p className="color" title="Event Average">
                 OWGR
@@ -285,7 +283,7 @@ function MultiVariableSlider() {
           </ul>
         </div>
        {/* Scoring stats */}
-       <div tabIndex={0} className="dropdown">
+       <div tabIndex={2} className="dropdown">
           <div role="button" className="btn">
             <p className="color">
               Scoring Stats
@@ -297,13 +295,13 @@ function MultiVariableSlider() {
             setSliderValues={setSliderValues}
             value={sliderValues[2].value} />
             
-            {dropdownOpen[0] ? (
-              <FaArrowCircleUp onClick={() => toggleDropdown(0)} />
+            {dropdownOpen[2] ? (
+              <FaArrowCircleUp onClick={() => toggleDropdown(2)} />
             ) : (
-              <FaArrowCircleDown onClick={() => toggleDropdown(0)} />
+              <FaArrowCircleDown onClick={() => toggleDropdown(2)} />
             )}
           </div>
-          <ul className={`dropdown-content ${dropdownOpen[0] ? "show" : ""}`}>
+          <ul className={`dropdown-content ${dropdownOpen[2] ? "show" : ""}`}>
             <li className="slider-list">
               <p className="color" title="Event Average">
               Hole in One Average
@@ -413,7 +411,7 @@ function MultiVariableSlider() {
           </ul>
         </div>
        {/* event specific */}
-       <div tabIndex={0} className="dropdown">
+       <div tabIndex={3} className="dropdown">
           <div role="button" className="btn">
             <p className="color">
             Event Specific
@@ -426,13 +424,13 @@ function MultiVariableSlider() {
             setSliderValues={setSliderValues}
             value={sliderValues[3].value} />
             
-            {dropdownOpen[0] ? (
-              <FaArrowCircleUp onClick={() => toggleDropdown(0)} />
+            {dropdownOpen[3] ? (
+              <FaArrowCircleUp onClick={() => toggleDropdown(3)} />
             ) : (
-              <FaArrowCircleDown onClick={() => toggleDropdown(0)} />
+              <FaArrowCircleDown onClick={() => toggleDropdown(3)} />
             )}
           </div>
-          <ul className={`dropdown-content ${dropdownOpen[0] ? "show" : ""}`}>
+          <ul className={`dropdown-content ${dropdownOpen[3] ? "show" : ""}`}>
             <li className="slider-list">
               <p className="color" >
               Par 70
@@ -521,7 +519,7 @@ function MultiVariableSlider() {
           </ul>
         </div>
        {/* Strokes Gained*/}
-       <div tabIndex={0} className="dropdown">
+       <div tabIndex={4} className="dropdown">
           <div role="button" className="btn">
             <p className="color">
             Strokes Gained
@@ -534,13 +532,13 @@ function MultiVariableSlider() {
             setSliderValues={setSliderValues}
             value={sliderValues[4].value} />
             
-            {dropdownOpen[0] ? (
-              <FaArrowCircleUp onClick={() => toggleDropdown(0)} />
+            {dropdownOpen[4] ? (
+              <FaArrowCircleUp onClick={() => toggleDropdown(4)} />
             ) : (
-              <FaArrowCircleDown onClick={() => toggleDropdown(0)} />
+              <FaArrowCircleDown onClick={() => toggleDropdown(4)} />
             )}
           </div>
-          <ul className={`dropdown-content ${dropdownOpen[0] ? "show" : ""}`}>
+          <ul className={`dropdown-content ${dropdownOpen[4] ? "show" : ""}`}>
             <li className="slider-list">
               <p className="color">
               SG off the Tee
@@ -615,7 +613,7 @@ function MultiVariableSlider() {
           </ul>
         </div>
        {/* skill stats */}
-       <div tabIndex={0} className="dropdown">
+       <div tabIndex={5} className="dropdown">
           <div role="button" className="btn">
             <p className="color">
             Skill Stats
@@ -627,13 +625,13 @@ function MultiVariableSlider() {
             setSliderValues={setSliderValues}
             value={sliderValues[5].value} />
             
-            {dropdownOpen[0] ? (
-              <FaArrowCircleUp onClick={() => toggleDropdown(0)} />
+            {dropdownOpen[5] ? (
+              <FaArrowCircleUp onClick={() => toggleDropdown(5)} />
             ) : (
-              <FaArrowCircleDown onClick={() => toggleDropdown(0)} />
+              <FaArrowCircleDown onClick={() => toggleDropdown(5)} />
             )}
           </div>
-          <ul className={`dropdown-content ${dropdownOpen[0] ? "show" : ""}`}>
+          <ul className={`dropdown-content ${dropdownOpen[5] ? "show" : ""}`}>
             <li className="slider-list">
               <p className="color">
               Driving Distance
