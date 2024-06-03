@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./../../assets/css/GBS.css";
-import "./../../state/footerData";
+import "./../Footer/state/footerData";
 import { Slider1 } from "./Differentsliders";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { FaArrowCircleUp } from "react-icons/fa";

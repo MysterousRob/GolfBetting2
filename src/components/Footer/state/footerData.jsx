@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from 'react-router-dom';
-import './../assets/css/footer.css';
-import { navOptions } from "./nav";
+import './../../../assets/css/footer.css';
+import { navOptions } from '../../../state/nav'
 
 
 //making nested array (FOLLOW STRUCTURE, DONT DOUBT IT, JUST DO IT)

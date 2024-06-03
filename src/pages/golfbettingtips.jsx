@@ -1,7 +1,7 @@
 import React from 'react';
 import './../assets/css/app.css';
 import Header from '../components/Header/Header.jsx';
-import Footer from '../components/footer.jsx';
+import Footer from '../components/Footer/footer.jsx';
 //function NewPage
 
 function Tips() {

@@ -1,6 +1,6 @@
 import React from "react";
-import './../assets/css/footer.css'
-import { Foot2 } from "../state/footerData";
+import '../../assets/css/footer.css';
+import { Foot2 } from "./state/footerData";
 
 function Footer() {
     return(
@@ -10,7 +10,7 @@ function Footer() {
                   18
                 </p>
                 <p>
-                  Please gamble responsably 👀
+                  Please gamble responsibly 👀
                 </p>
             </div> 
 <footer className="foot">

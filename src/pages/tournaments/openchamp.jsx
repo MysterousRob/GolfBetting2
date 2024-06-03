@@ -1,6 +1,6 @@
 import './../../assets/css/tournament.css'
 import Header from '../../components/Header/Header';
-import Footer from '../../components/footer';
+import Footer from '../../components/Footer/footer';
 
 function OpenChamp() {
     return (
