@@ -1,6 +1,6 @@
 import React from 'react';
 import './../assets/css/app.css';
-import Header from '../components/Header.jsx';
+import Header from '../components/Header/Header.jsx';
 import Footer from '../components/footer.jsx';
 //function NewPage
 

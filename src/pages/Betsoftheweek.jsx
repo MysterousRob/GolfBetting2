@@ -2,7 +2,7 @@ import React from 'react';
 import './../assets/css/app.css';
 import './../assets/css/index.css';
 import Competiton from './tournaments/tournaments';
-import Header from './../components/Header';
+import Header from '../components/Header/Header';
 import Footer from '../components/footer';
 //function NewPage
 

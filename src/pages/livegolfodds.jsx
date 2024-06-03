@@ -1,7 +1,7 @@
 import React from 'react';
 import './../assets/css/app.css';
 import './../assets/css/index.css';
-import Header from './../components/Header';
+import Header from '../components/Header/Header';
 import MultiVariableSlider from '../components/Slider/sliders';
 import Footer from '../components/footer';
 import LeaderboardOutline from '../components/Leaderboard/LeaderboardTable';
